@@ -7,18 +7,18 @@ Comment = input("(Optional) Comment: ")
 Version = input("(Optional) Version: ")
 
  
-fp = open(Dname, "a")
-fp.write("[Desktop Entry]\n")
+f = open(Dname, "a")
+f.write("[Desktop Entry]\n")
 
 if Version != "":
-	fp.write("Version=" + Version + "\n")
+	f.write("Version=" + Version + "\n")
 
 if Comment != "":
-	fp.write("Comment=" + Comment +  "\n")
+	f.write("Comment=" + Comment +  "\n")
 
-fp.write(Aname + "\n")
-fp.write(Exec + "\n")
-fp.close()
+f.write(Aname + "\n")
+f.write(Exec + "\n")
+f.close()
 
 os.system("sudo mv " + Dname + " /usr/share/applications")
 
