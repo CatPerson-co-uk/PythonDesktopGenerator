@@ -18,6 +18,7 @@ if Comment != "":
 
 f.write(Aname + "\n")
 f.write(Exec + "\n")
+f.write("Type = Application\n")
 f.close()
 
 os.system("sudo mv " + Dname + " /usr/share/applications")
