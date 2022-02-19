@@ -1,9 +1,9 @@
 import os
 
 Dname = input("Name Of Desktop File: ") + ".desktop"
-Comment = input("(Optional) Comment: ")
 Aname = "Name=" + input("Name Of Application: ")
 Exec = "Exec=" + input("Path To Executable/Application: ")
+Comment = input("(Optional) Comment: ")
 Version = input("(Optional) Version: ")
 
  
